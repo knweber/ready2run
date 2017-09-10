@@ -4,7 +4,8 @@ var geolocator = require('../controllers/index');
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  res.render('index');
+  var userLoc = geolocator.responseJSON;
+  res.render('index', { userLoc });
 });
 
 module.exports = router;
