@@ -5,6 +5,8 @@ const app = require('../app');
 it('should render the index page', (done) => {
   request(app)
     .get('/')
-    .expect(200)
+    .expect((res) => {
+      expect(res.status).toEqual(200)
+    })
     .end(done);
 })
