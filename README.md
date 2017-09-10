@@ -13,6 +13,6 @@ Technologies used:
   * Google Geolocation API
   * Dark Sky API
   * Open AQ Platform API
-  * To be deployed on Heroku(**)
+  * To be deployed on Heroku (**)
 
 This app was built using test-driven development with continuous integration.
