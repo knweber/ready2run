@@ -1,4 +1,6 @@
 var express = require('express');
+require('dotenv').config();
+var weatherPswrd = process.env.WEATHER;
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -16,6 +18,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(weatherPswrd);
 
 app.use('/', index);
 app.use('/', about);
