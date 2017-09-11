@@ -5,7 +5,9 @@ $(document).ready(function() {
       latitude: loc[0],
       longitude: loc[1]
     };
-    console.log(coords);
-    return coords;
+    var lat = coords.latitude;
+    var lon = coords.longitude;
+    $('.lat').text(lat);
+    $('.lon').text(lon);
   });
 });
