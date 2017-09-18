@@ -1,5 +1,5 @@
 var express = require('express');
-require('dotenv').config();
+dotenv.load({ path: '.env' });
 var weatherPswrd = process.env.WEATHER;
 var path = require('path');
 var favicon = require('serve-favicon');
