@@ -1,5 +1,4 @@
 require('dotenv').config();
-var weatherPswrd = process.env.WEATHER;
 var express = require('express');
 var router = express.Router();
 var app = require('../app');
@@ -7,11 +6,6 @@ var getWeather = require('../controllers/indexController');
 var jsdom = require('jsdom');
 var dom = new jsdom.JSDOM(`<!DOCTYPE html>`);
 var $ = require('jquery')(dom.window);
-
-
-
-
-/* GET home page. */
 
 router.get('/', (req, res) => {
   var weatherData = {
@@ -21,7 +15,8 @@ router.get('/', (req, res) => {
     windMph: getWeather.responseJSON.current_observation.wind_mph,
     uvRad: getWeather.responseJSON.current_observation.UV
   };
-  res.render('index', { weatherData });
+  var toSend = JSON.stringify(weatherData);
+  res.render('index', { toSend });
 });
 
 module.exports = router;

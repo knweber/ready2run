@@ -4,7 +4,8 @@ const app = require('../app');
 
 it('should render the index page', (done) => {
   request(app)
-    .get('/')
+  // about route is placeholder
+    .get('/about')
     .expect((res) => {
       expect(res.status).toEqual(200)
     })
