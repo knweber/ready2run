@@ -10,7 +10,7 @@ $(document).ready(function() {
     };
     lat = coords.latitude;
     lon = coords.longitude;
-    $('.lat').text(lat);
-    $('.lon').text(lon);
+  //  $('.lat').text(lat);
+  //  $('.lon').text(lon);
   });
 });
