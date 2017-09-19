@@ -3,14 +3,19 @@ var jsdom = require('jsdom');
 var dom = new jsdom.JSDOM(`<!DOCTYPE html>`);
 var $ = require('jquery')(dom.window);
 
+// Gets current weather data for location of user's IP address
 var getWeather = $.get('http://api.wunderground.com/api/' + process.env.WEATHER + '/conditions/q/autoip.json', function(res){
 });
 
 module.exports = getWeather;
 
+
+// Will take all conditions into account and either recommend specific running gear (e.g. shorts and a rain jacket, insulated tights with base layer shirt and breathable outer layer) or advise that running would be too dangerous
 var gearSuggestion = function(conditions,temp,wind,uv) {
 
 };
+
+// Helper functions to identify extreme weather conditions
 
 // Extra caution is needed when temps are below 15 degrees F
 var tooCold = function(temp) {

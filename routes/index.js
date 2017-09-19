@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
     windMph: getWeather.responseJSON.current_observation.wind_mph,
     uvRad: getWeather.responseJSON.current_observation.UV
   };
-  // var toSend = JSON.stringify(weatherData);
+
   res.render('index', { weatherData });
 });
 
