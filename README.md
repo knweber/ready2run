@@ -15,3 +15,9 @@ Technologies used:
   * To be deployed on Heroku
 
 This app was built using test-driven development with continuous integration.
+
+## Instructions
+1. Clone repo to local computer
+2. Run ``npm install``
+3. Run ``nodemon`` to start server
+4. Open up localhost:3000
