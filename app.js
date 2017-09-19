@@ -1,5 +1,5 @@
 var express = require('express');
-dotenv.load({ path: '.env' });
+// dotenv.load({ path: '.env' });
 var weatherPswrd = process.env.WEATHER;
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -18,7 +18,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(weatherPswrd);
+// app.use(weatherPswrd);
 
 app.use('/', index);
 app.use('/', about);

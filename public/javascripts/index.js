@@ -13,7 +13,4 @@ $(document).ready(function() {
     $('.lat').text(lat);
     $('.lon').text(lon);
   });
-  // $.get('http://api.wunderground.com/api/' + weatherPswrd + '/conditions/q/autoip.json', function(res){
-  //   console.log(res);
-  // })
 });

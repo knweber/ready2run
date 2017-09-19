@@ -2,9 +2,14 @@ var express = require('express');
 var jsdom = require('jsdom');
 var dom = new jsdom.JSDOM(`<!DOCTYPE html>`);
 var $ = require('jquery')(dom.window);
-var lat;
-var lon;
+var location;
+var weatherGeneral;
+var temp;
+var windMph;
+var uvRad;
+var toSend;
 
-$.getJSON(('https://api.darksky.net/forecast/' + process.env.DARK_SKY_KEY + '/' + lat + ',' + lon), function(response) {
-  console.log(response);
-})
+var getWeather = $.get('http://api.wunderground.com/api/' + process.env.WEATHER + '/conditions/q/autoip.json', function(res){
+});
+
+module.exports = getWeather;
