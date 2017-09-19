@@ -6,7 +6,18 @@
   <body>
     <div class="section">
       <div class="container flex-container" style="width: 95%;">
-        Your latitute is:
+        <strong>Your Location:</strong>
+        <p><%= weatherData.location.full %></p>
+        <strong>Current Weather Conditions:</strong>
+        <p><%= weatherData.weatherGeneral %></p>
+        <strong>Current Temperature:</strong>
+        <p><%= weatherData.temp %> degrees F</p>
+        <strong>Current Wind Speeds:</strong>
+        <p><%= weatherData.windMph %></p>
+        <strong>Current UV Index:</strong>
+        <p><%= weatherData.uvRad %></p>
+
+        Your latitude:
         <div class="lat">
         </div>
         Your longitude is:
