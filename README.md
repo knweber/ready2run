@@ -10,9 +10,8 @@ Technologies used:
   * Supertest
   * Expect
   * Bulma
-  * Google Geolocation API
-  * Dark Sky API
+  * Weather Underground API
   * Open AQ Platform API
-  * To be deployed on Heroku (**)
+  * To be deployed on Heroku
 
 This app was built using test-driven development with continuous integration.
